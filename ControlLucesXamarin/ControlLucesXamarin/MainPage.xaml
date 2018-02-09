@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ControlLucesXamarin"
+             x:Class="ControlLucesXamarin.MainPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+            <On Platform="Android, WinPhone, Windows" Value="20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout>
+        <Label x:Name="lblLight" Text="Light:" />
+        <Label x:Name="lblTemperature" Text="Temperature:" />
+        <Button x:Name="btnLight12" Text="Light 12" Clicked="TurnOnLight12" />
+        <Button x:Name="btnLight13" Text="Light 13" Clicked="TurnOnLight13" />
+    </StackLayout>
+
+</ContentPage>
